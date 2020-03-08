@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Brain Trainer</string>
+    <string name="taskTextView">taskTextView</string>
+    <string name="timerTextView">timerTextView</string>
+    <string name="scoreTextView">scoreTextView</string>
+</resources>
