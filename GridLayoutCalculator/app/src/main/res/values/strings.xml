@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">GridLayoutCalculator</string>
+
+    <string name="oneDigit">1</string>
+    <string name="twoDigit">2</string>
+    <string name="threeDigit">3</string>
+    <string name="fourDigit">4</string>
+    <string name="fiveDigit">5</string>
+    <string name="sixDigit">6</string>
+    <string name="sevenDigit">7</string>
+    <string name="eightDigit">8</string>
+    <string name="nineDigit">9</string>
+    <string name="zeroDigit">0</string>
+
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="division">/</string>
+    <string name="multiply">*</string>
+    <string name="equal">=</string>
+
+    <string name="dot">.</string>
+
+    <string name="clear">C</string>
+    <string name="percentage">%</string>
+
+</resources>
