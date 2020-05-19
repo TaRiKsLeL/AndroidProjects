@@ -1,5 +1,6 @@
 package com.example.gridlayoutcalculator;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -25,6 +26,21 @@ public class MainActivity extends AppCompatActivity {
         mainTextView = findViewById(R.id.mainTextView);
         expressionTextView = findViewById(R.id.expressionTextView);
         stringBuilder=new StringBuilder();
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putString("mainTW",stringBuilder.toString());
+        outState.putString("expTW",expressionTextView.getText().toString());
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        stringBuilder.append(savedInstanceState.getString("mainTW"));
+        mainTextView.setText(stringBuilder);
+        expressionTextView.setText(savedInstanceState.getString("expTW"));
     }
 
     public void onClick(View view){

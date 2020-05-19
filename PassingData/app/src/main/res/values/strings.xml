@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PassingData</string>
+    <string name="name">Ім\'я</string>
+    <string name="familyName">Прізвисько</string>
+    <string name="buttonText">До HR</string>
+    <string name="buttonHRandBack">До HR і назад</string>
+    <string name="decision">Рішення</string>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HRResultActivity">
+
+    <TextView
+        android:id="@+id/nameHRandBack"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/familynameHRandBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/familynameHRandBack"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/editResult"
+        app:layout_constraintEnd_toEndOf="@+id/nameHRandBack"
+        app:layout_constraintStart_toStartOf="@+id/nameHRandBack"
+        app:layout_constraintTop_toBottomOf="@+id/nameHRandBack" />
+
+    <EditText
+        android:id="@+id/editResult"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:inputType="textPersonName|textCapWords"
+        android:text="@string/decision"
+        app:layout_constraintBottom_toTopOf="@+id/buttonHR"
+        app:layout_constraintEnd_toEndOf="@+id/nameHRandBack"
+        app:layout_constraintStart_toStartOf="@+id/nameHRandBack"
+        app:layout_constraintTop_toBottomOf="@+id/familynameHRandBack" />
+
+    <Button
+        android:id="@+id/buttonHR"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:onClick="Back"
+        android:text="@string/buttonText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/nameHRandBack"
+        app:layout_constraintStart_toStartOf="@+id/nameHRandBack"
+        app:layout_constraintTop_toBottomOf="@+id/editResult" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
