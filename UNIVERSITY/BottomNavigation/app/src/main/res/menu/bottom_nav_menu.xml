@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_binary"
+        android:icon="@drawable/ic_code"
+        android:title="@string/title_binary" />
+
+    <item
+        android:id="@+id/navigation_decimal"
+        android:icon="@drawable/numbers"
+        android:title="@string/title_decimal" />
+
+    <item
+        android:id="@+id/navigation_sum"
+        android:icon="@drawable/plus"
+        android:title="@string/title_sum" />
+
+</menu>
