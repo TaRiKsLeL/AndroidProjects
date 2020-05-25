@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/navigation_decimal"
-        android:name="com.example.bottomnavigation.ui.dashboard.DashboardFragment"
+        android:name="com.example.bottomnavigation.ui.decimal.ToDecimalFragment"
         android:label="@string/title_decimal"
         tools:layout="@layout/fragment_decimal" />
 
     <fragment
         android:id="@+id/navigation_sum"
-        android:name="com.example.bottomnavigation.ui.notifications.NotificationsFragment"
+        android:name="com.example.bottomnavigation.ui.sum.SumFragment"
         android:label="@string/title_sum"
         tools:layout="@layout/fragment_sum" />
 </navigation>

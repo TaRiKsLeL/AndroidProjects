@@ -1,4 +1,4 @@
-package com.example.bottomnavigation.ui.notifications;
+package com.example.bottomnavigation.ui.sum;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -17,9 +17,9 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.bottomnavigation.MathExt;
 import com.example.bottomnavigation.R;
 
-public class NotificationsFragment extends Fragment {
+public class SumFragment extends Fragment {
 
-    private NotificationsViewModel notificationsViewModel;
+    private SumViewModel sumViewModel;
     View root;
 
     String result="";
@@ -40,11 +40,11 @@ public class NotificationsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        notificationsViewModel =
-                ViewModelProviders.of(this).get(NotificationsViewModel.class);
+        sumViewModel =
+                ViewModelProviders.of(this).get(SumViewModel.class);
         root = inflater.inflate(R.layout.fragment_sum, container, false);
         final TextView textView = root.findViewById(R.id.text_notifications);
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        sumViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 //textView.setText(s);

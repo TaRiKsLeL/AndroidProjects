@@ -1,4 +1,4 @@
-package com.example.bottomnavigation.ui.dashboard;
+package com.example.bottomnavigation.ui.decimal;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -17,9 +17,9 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.bottomnavigation.NumberConverter;
 import com.example.bottomnavigation.R;
 
-public class DashboardFragment extends Fragment {
+public class ToDecimalFragment extends Fragment {
 
-    private DashboardViewModel dashboardViewModel;
+    private ToDecimalViewModel toDecimalViewModel;
     View root;
 
     String result="";
@@ -40,11 +40,11 @@ public class DashboardFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                ViewModelProviders.of(this).get(DashboardViewModel.class);
+        toDecimalViewModel =
+                ViewModelProviders.of(this).get(ToDecimalViewModel.class);
         root = inflater.inflate(R.layout.fragment_decimal, container, false);
         final TextView textView = root.findViewById(R.id.text_dashboard);
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        toDecimalViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 //textView.setText(s);
