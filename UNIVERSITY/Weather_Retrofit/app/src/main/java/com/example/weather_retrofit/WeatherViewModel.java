@@ -20,5 +20,4 @@ public class WeatherViewModel extends ViewModel {
     public void updateWeatherData(String city){
         repository.updateWeatherData(city);
     }
-
 }

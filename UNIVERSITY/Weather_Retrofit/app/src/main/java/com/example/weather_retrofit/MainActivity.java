@@ -41,12 +41,10 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), s,Toast.LENGTH_LONG).show();
             }
         });
-
     }
 
     public void searchTemp(View view){
         weatherViewModel.updateWeatherData(cityNameEditText.getText().toString());
 
     }
-
 }

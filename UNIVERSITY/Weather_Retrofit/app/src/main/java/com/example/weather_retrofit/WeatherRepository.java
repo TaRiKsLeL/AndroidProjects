@@ -35,7 +35,7 @@ public class WeatherRepository {
             @Override
             public void onResponse(Call<WeatherPar> call, Response<WeatherPar> response) {
                 if(!response.isSuccessful()){
-                    errorText.setValue("Couldn't found info");
+                    errorText.setValue("Не знайдено інформацію");
                     return;
                 }
                 Weather newWeather = response.body().weatherTmp;
